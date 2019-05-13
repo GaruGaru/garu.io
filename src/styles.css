@@ -1,3 +1,5 @@
+@import "~font-awesome/css/font-awesome.css";
+
 /*!
  * Template Name: Developer - Responsive Website Template for Developers
  * Version: 2.1
@@ -150,6 +152,7 @@ a.dotted-link:hover {
   background: #b0b7bf;
   width: 36px;
   height: 36px;
+  line-height: 36px;
   display: inline-block;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -232,11 +235,11 @@ a.dotted-link:hover {
 }
 
 .latest .divider {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .latest .featured {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .latest .featured .title {
@@ -246,7 +249,7 @@ a.dotted-link:hover {
 }
 
 .latest .featured .summary {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   color: #778492;
 }
 
@@ -636,6 +639,33 @@ a.dotted-link:hover {
 
 .footer .fa-heart {
   color: #fb866a;
+}
+
+.aside ul li i {
+  margin-right: 10px;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.list-unstyled span {
+  margin-right: 10px;
+}
+
+.badge {
+  padding: 6px;
+  font-size: 14px;
+  margin: 2px;
+
+}
+
+.featured button {
+  margin-right: 10px;
+}
+
+.btn i {
+  font-size: 22px;
+  vertical-align: middle;
+  padding: 0px;
 }
 
 @media (max-width: 767.98px) {
