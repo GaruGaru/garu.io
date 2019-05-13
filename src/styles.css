@@ -658,14 +658,20 @@ a.dotted-link:hover {
 
 }
 
-.featured button {
+.featured a {
   margin-right: 10px;
+  color: white;
 }
 
 .btn i {
   font-size: 22px;
   vertical-align: middle;
   padding: 0px;
+  color: white;
+}
+
+.content img {
+  margin-right: 10px;
 }
 
 @media (max-width: 767.98px) {
