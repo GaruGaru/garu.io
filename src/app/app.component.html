@@ -1,298 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Portfolio/Resume Theme for Developers</title>
+  <title>Tommaso Garuglieri's Portfolio</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
-  <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 </head>
 
-<body style="background: #DAE3E7">
+<body>
 
 <header class="header">
-  <div class="container clearfix">
-    <div class="profile-content float-left">
-      <h1 class="name">Tommaso Garuglieri</h1>
-      <h2 class="desc">Full Stack Developer</h2>
-
-      <ul class="social list-inline">
-        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>
-      </ul>
-
-    </div>
-
-
-    <a class="btn btn-cta-primary float-right" href="https://themes.3rdwavemedia.com/" target="_blank"><i
-      class="fas fa-paper-plane"></i> Contact Me</a>
-
-    <a style="margin-right: 2px" class="btn btn-cta-primary pull-right" href="https://www.visualcv.com/tommaso-garuglieri" target="_blank"><i class="fa fa-book"></i>CV</a>
-
-  </div>
+  <app-header></app-header>
 </header>
 
 <div class="container sections-wrapper" style="background: #DAE3E7;">
   <div class="row">
     <div class="primary col-lg-8 col-12">
-      <section class="about section">
-        <div class="section-inner">
-          <h2 class="heading">About Me</h2>
-          <div class="content">
-            <p>Professional Backend and Android developer, deep knowledge and understanding of software development
-              clean architecture and agile methodologies, experience with development and architecture of scalable,
-              fault tolerant
-              microservices and big data solutions.</p>
-          </div>
-        </div>
-      </section>
 
-      <section class="experience section">
-        <div class="section-inner">
-          <h2 class="heading">Work Experience</h2>
-          <div class="content">
+      <app-about-me></app-about-me>
 
-            <div class="item">
+      <app-work-experience></app-work-experience>
 
-              <div>
-
-                <h3 class="title">
-                  <img width="65px" height="65px"
-                       src="https://media.licdn.com/dms/image/C4D0BAQGUXDewJRkLgQ/company-logo_400_400/0?e=1565827200&v=beta&t=rR0-wO1NyNN5g3VyR_k1xQ756t4Iydw1NgzpvxTvn1w"
-                       alt="..." class="rounded-circle">
-
-                  Full Stack Developer - <span class="place"><a href="#">Travel Appeal</a></span>
-                  <span class="year">(2018 - Present)</span>
-                </h3>
-              </div>
-              <p>
-              <p>During my experience as fullstack developer in TravelAppeal I've worked on the design and
-                implementation of the <b>microservice architecture</b> using technologies such as <b>spring boot</b> for
-                the backend and <b>angular/typescript</b> for the frontend deployed on <b>AWS (ecs)</b> and <b>Azure
-                  (kubernetes)</b>.
-              <p>
-
-              <p>Design and implementation of <b>high scalable data ingestion pipeline</b> and <b>ETL jobs</b> on AWS
-                using <b>Amazon RDS, Amazon Redshift and Amazon S3</b> as backend storages and <b>ECS</b> as container
-                orchestration platform with Amazon <b>CodeBuild/CodePipeline for CI/CD</b>
-              <p>
-              </p>
-            </div>
-
-            <div class="item">
-              <h3 class="title">
-                <img width="65px" height="65px"
-                     src="https://media.licdn.com/dms/image/C560BAQHeqaAqYFphcg/company-logo_400_400/0?e=1565827200&v=beta&t=4Fxkcpi-BX7G6v9CKEUWcx4zxqY-kVwaTB9kp6w6zbc"
-                     alt="..." class="rounded-circle">
-
-                Full Stack Developer - <span class="place"><a href="#">Instal</a></span> <span
-                class="year">(2016 - 2018)</span></h3>
-
-              <p>In Instal I've worked as an android developer, my work was focused mainly on the
-                proprietary <b>sdk development</b></p>
-
-              <p>
-                As Backend Developer I've worked with <b>apache storm</b> and <b>google dataflow</b>
-                with <b>hadoop</b> in order to archive
-                high performance real data processing, I've also contributed to the microservices-based
-                architecture by developing
-                scalable and fault tolerant services using <b>python</b> with <b>tornado</b> and <b>golang</b>
-                with <b>gingonic</b>.
-              </p>
-
-              <p>
-                As frontend developer I've developed dashboards for our services using <b>angular 6</b>
-                and <b>reactjs</b>.
-              </p>
-
-
-              <p>During my experience in Instal I've gained experience also with the devops stack working
-                with <b>Chef</b> (infrastructure as code), <b>Docker</b> (container engine), <b>Kubernetes</b>
-                for production container orchestration and <b>Sensu</b> for monitoring and alerting
-                system in the <b>GCE</b> environment.</p>
-
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <section class="latest section">
-        <div class="section-inner">
-          <h2 class="heading">Personal Projects</h2>
-          <div class="content">
-
-            <div class="item featured text-center">
-              <h3 class="title"><a
-                href="https://github.com/garugaru/flaw"
-                target="_blank">Flaw</a></h3>
-              <span class="badge badge-pill badge-primary">GoLang</span>
-              <span class="badge badge-pill badge-success">CLI</span>
-              <span class="badge badge-pill badge-danger">chaos engineering</span>
-              <p class="summary">CLI for injecting failures on api calls for local chaos engineering</p>
-
-              <a type="button" href="https://github.com/garugaru/flaw" class="btn btn-primary"><i class="btn fab fa-github-alt"></i> Github</a>
-
-            </div>
-
-            <hr class="divider"/>
-
-            <div class="item featured text-center">
-              <h3 class="title"><a
-                href="https://github.com/garugaru/warden"
-                target="_blank">Warden</a></h3>
-              <span class="badge badge-pill badge-primary">GoLang</span>
-              <span class="badge badge-pill badge-success">monitoring</span>
-              <p class="summary">Warden is a lightweight host monitor designed to be run inside containers that
-                retrieves metrics from the local node and push them on a remote aggregator.</p>
-              <a type="button" href="https://github.com/garugaru/warden" class="btn btn-primary"><i class="fab fa-github-alt"></i> Github</a>
-            </div>
-
-            <hr class="divider"/>
-
-            <div class="item featured text-center">
-              <h3 class="title"><a
-                href="https://github.com/garugaru/confy2"
-                target="_blank">Confy</a></h3>
-              <span class="badge badge-pill badge-primary">Java</span>
-              <span class="badge badge-pill badge-success">configurations</span>
-              <p class="summary">Easy, fluent, typesafe, container ready java configurations</p>
-              <a type="button" href="https://github.com/garugaru/confy2" class="btn btn-primary"><i class="btn fab fa-github-alt"></i> Github</a>
-            </div>
-
-            <hr class="divider"/>
-
-            <div class="item featured text-center">
-
-              <h3 class="title"><a
-                href="https://github.com/GaruGaru/today-garbage-impruneta"
-                target="_blank">Today garbage Impruneta</a></h3>
-              <span class="badge badge-pill badge-primary">Kotlin</span>
-              <span class="badge badge-pill badge-success">android app</span>
-              <p class="summary">Garbage remove schedule viewer written in kotlin using <b>coroutines</b>, <b>view
-                models</b> and <b>firebase</b></p>
-
-              <a type="button" href="https://github.com/GaruGaru/today-garbage-impruneta" class="btn btn-primary"><i class="btn fab fa-github-alt"></i> Github</a>
-
-            </div>
-
-            <a type="button" href="" class="btn btn-primary"><i class="btn fab fa-github-alt"></i> All Projects</a>
-
-          </div>
-        </div>
-      </section>
-
+      <app-personal-projects></app-personal-projects>
 
     </div>
+
     <div class="secondary col-lg-4 col-12">
+
       <aside class="info aside section">
-        <div class="section-inner">
-          <div class="content">
-            <ul class="list-unstyled">
-              <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Florence</li>
-              <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
-                href="mailto: garuglieritommaso@gmail.com">garuglieritommaso@gmail.com</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <app-contacts></app-contacts>
       </aside>
 
       <aside class="skills aside section">
-        <div class="section-inner">
-          <h2 class="heading">Languages</h2>
-          <div class="content">
-
-            <div class="skillset">
-
-              <div class="item">
-                <h3 class="level-title">
-                  Java
-                  <span class="level-label">Experienced</span>
-                </h3>
-                <div class="level-bar">
-                  <div class="level-bar-inner" style="width: 95%">
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <h3 class="level-title">Kotlin<span class="level-label">Expert</span></h3>
-                <div class="level-bar">
-                  <div class="level-bar-inner" style="width: 80%">
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <h3 class="level-title">GoLang<span class="level-label">Proficient</span></h3>
-                <div class="level-bar">
-                  <div class="level-bar-inner" style="width: 67%">
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <h3 class="level-title">Python<span class="level-label">Proficient</span></h3>
-                <div class="level-bar">
-                  <div class="level-bar-inner" style="width: 50%">
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <h3 class="level-title">Typescript<span class="level-label">Beginner</span></h3>
-                <div class="level-bar">
-                  <div class="level-bar-inner" style="width: 37%">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
+        <app-skills></app-skills>
       </aside>
 
       <aside class="education aside section">
-        <div class="section-inner">
-          <h2 class="heading">Education</h2>
-          <div class="content">
-            <div class="item">
-              <h3 class="title"><i class="fas fa-graduation-cap"></i>Computer Science</h3>
-              <h4 class="university">IIS Gobetti Volta <span class="year">(2010-2015)</span></h4>
-            </div>
-
-          </div>
-        </div>
+        <app-education></app-education>
       </aside>
 
 
       <aside class="languages aside section">
-        <div class="section-inner">
-          <h2 class="heading">Languages</h2>
-          <div class="content">
-            <ul class="list-unstyled">
-              <li class="item">
-                <span class="title"><strong>Italian:</strong></span>
-                <span class="level">Native Speaker <br class="visible-xs"/>  </span>
-              </li>
-
-              <li class="item">
-                <span class="title"><strong>English:</strong></span>
-                <span class="level">Professional Proficiency<br class="visible-xs"/>
-                </span>
-              </li>
-
-            </ul>
-          </div>
-        </div>
+        <app-languages></app-languages>
       </aside>
 
 
@@ -303,11 +57,7 @@
 
 <footer class="footer">
   <div class="container text-center">
-
-    <small class="copyright">Base theme <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com"
-                                                                           target="_blank">Xiaoying Riley</a> for
-      developers
-    </small>
+    <small class="copyright">Base theme by Xiaoying Riley</small>
   </div>
 </footer>
 
