@@ -1,0 +1,24 @@
+[
+  {
+    "role": "Full Stack Developer",
+    "start_year": 2018,
+    "end_year": -1,
+    "company": {
+      "name": "Travel Appeal",
+      "website": "https://travelappeal.com",
+      "logo": "https://media.licdn.com/dms/image/C4D0BAQGUXDewJRkLgQ/company-logo_400_400/0?e=1565827200&v=beta&t=rR0-wO1NyNN5g3VyR_k1xQ756t4Iydw1NgzpvxTvn1w"
+    },
+    "description": "<p><p>During my experience as fullstack developer in TravelAppeal I've worked on the design and implementation of the <b>microservice architecture</b> using technologies such as <b>spring boot</b> for the backend and <b>angular/typescript</b> for the frontend deployed on <b>AWS (ecs)</b> and <b>Azure (kubernetes)</b>.<p><p>Design and implementation of <b>high scalable data ingestion pipeline</b> and <b>ETL jobs</b> on AWS using <b>Amazon RDS, Amazon Redshift and Amazon S3</b> as backend storages and <b>ECS</b> as container orchestration platform with Amazon <b>CodeBuild/CodePipeline for CI/CD</b> <p></p>"
+  },
+  {
+    "role": "Full Stack Developer",
+    "start_year": 2016,
+    "end_year": 2018,
+    "company": {
+      "name": "Instal",
+      "website": "https://instal.com",
+      "logo": "https://media.licdn.com/dms/image/C560BAQHeqaAqYFphcg/company-logo_400_400/0?e=1565827200&v=beta&t=4Fxkcpi-BX7G6v9CKEUWcx4zxqY-kVwaTB9kp6w6zbc"
+    },
+    "description": "<p><p>In Instal I've worked as an android developer, my work was focused mainly on the proprietary <b>sdk development</b></p> <p> As Backend Developer I've worked with <b>apache storm</b> and <b>google dataflow</b> with <b>hadoop</b> in order to archive high performance real data processing, I've also contributed to the microservices-based architecture by developing scalable and fault tolerant services using <b>python</b> with <b>tornado</b> and <b>golang</b> with <b>gingonic</b>. </p>  <p> As frontend developer I've developed dashboards for our services using <b>angular 6</b> and <b>reactjs</b>. </p> <p>During my experience in Instal I've gained experience also with the devops stack working with <b>Chef</b> (infrastructure as code), <b>Docker</b> (container engine), <b>Kubernetes</b> for production container orchestration and <b>Sensu</b> for monitoring and alerting system in the <b>GCE</b> environment.</p></p>"
+  }
+]

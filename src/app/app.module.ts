@@ -10,6 +10,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { HeaderComponent } from './header/header.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HeaderComponent } from './header/header.component';
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
