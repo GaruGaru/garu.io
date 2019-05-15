@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {SkillsService} from './service/skills.service';
+import {Skill} from './models/skill';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-skills',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  skills: Observable<Array<Skill>>;
+
+  constructor(private readonly skillService: SkillsService) {
+  }
 
   ngOnInit() {
+    this.skills = this.skillService.getSkills();
   }
 
 }

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Java",
+    "experience": "Experienced",
+    "level": 98
+  },
+  {
+    "name": "Kotlin",
+    "experience": "expert",
+    "level": 83
+  },
+  {
+    "name": "GoLang",
+    "experience": "Proficient",
+    "level": 72
+  },
+  {
+    "name": "Python",
+    "experience": "Proficient",
+    "level": 61
+  },
+  {
+    "name": "Typescript",
+    "experience": "Beginner",
+    "level": 40
+  }
+]
