@@ -11,8 +11,8 @@ export class WorkExperienceService {
   constructor(private readonly http: HttpClient) {
   }
 
-  public workExperiences(): Observable<Array<WorkExperience>> {
-    return this.http.get<Array<WorkExperience>>('assets/data/work_experience.json');
+  public workExperiences(): Observable<WorkExperience[]> {
+    return this.http.get<WorkExperience[]>('assets/data/work_experience.json');
   }
 
 }

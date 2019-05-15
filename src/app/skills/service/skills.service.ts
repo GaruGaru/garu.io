@@ -10,8 +10,8 @@ export class SkillsService {
 
   constructor(private readonly httpClient: HttpClient) { }
 
-  getSkills(): Observable<Array<Skill>>{
-    return this.httpClient.get<Array<Skill>>('assets/data/skills.json')
+  getSkills(): Observable<Skill[]>{
+    return this.httpClient.get<Skill[]>('assets/data/skills.json')
   }
 
 }

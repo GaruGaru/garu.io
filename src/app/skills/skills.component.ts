@@ -10,7 +10,7 @@ import {Observable} from 'rxjs';
 })
 export class SkillsComponent implements OnInit {
 
-  skills: Observable<Array<Skill>>;
+  skills: Observable<Skill[]>;
 
   constructor(private readonly skillService: SkillsService) {
   }
