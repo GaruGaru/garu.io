@@ -1,3 +1,11 @@
 # Garu.io portfolio
 
-## WIP => Please don't look at the code 
+My personal portfolio developed using 
+
+* Angular 
+
+* Typescript 
+
+* RxJS 
+
+Deployed on garu.io using docker swarm ! 
