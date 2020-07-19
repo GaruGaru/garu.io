@@ -1,20 +1,20 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Skill} from '../models/skill';
 import {environment} from '../../../environments/environment';
+import {Project} from '../models/project';
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class SkillsService {
+export class PersonalProjectsService {
 
   constructor(private readonly httpClient: HttpClient) {
   }
 
-  getSkills(): Observable<Skill[]> {
-    return this.httpClient.get<Skill[]>(environment.endpoint + '/languages');
+  getProjects(): Observable<Project[]> {
+    return this.httpClient.get<Project[]>(environment.endpoint + '/personal/projects');
   }
 
 }
