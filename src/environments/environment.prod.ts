@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  endpoint: 'https://api.garu.io/personal',
+  endpoint: 'https://apis.garu.io/personal',
 };
