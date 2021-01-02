@@ -4,3 +4,7 @@ resources:
 - service.yml
 - ingress.yml
 - deployment.yml
+images:
+- name: garugaru/garu.io
+  newName: garugaru/garu.io
+  newTag: bf1a925aed4a530a360d17fe9e2faacf97a35833
