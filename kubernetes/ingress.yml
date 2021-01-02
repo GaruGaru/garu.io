@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: portfolio
+  namespace: garu-io
+  annotations:
+    "cert-manager.io/cluster-issuer": "letsencrypt-prod"
+
+spec:
+  rules:
+    - host: garu.io
+      http:
+        paths:
+          - backend:
+              serviceName: garu-io
+              servicePort: 80
+            path: /
+  tls:
+    - hosts:
+        - garu.io
+      secretName: garu-io-cert

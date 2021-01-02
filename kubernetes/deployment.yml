@@ -1,0 +1,58 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: garu-io
+  namespace: garu-io
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 50%
+      maxUnavailable: 25%
+
+  selector:
+    matchLabels:
+      app: garu-io
+      tier: api
+
+  template:
+    metadata:
+      labels:
+        app: garu-io
+        tier: api
+
+    spec:
+      containers:
+        - name: garu-io
+          image: garugaru/garu.io:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+              name: garu-io
+          resources:
+            requests:
+              memory: "10Mi"
+              cpu: "5m"
+            limits:
+              memory: "30Mi"
+              cpu: "100m"
+
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              podAffinityTerm:
+                labelSelector:
+                  matchExpressions:
+                    - key: app
+                      operator: In
+                      values:
+                        - api
+                topologyKey: topology.kubernetes.io/zone
+      tolerations:
+        - key: "garu-storage"
+          operator: "Equal"
+          value: "true"
+          effect: "NoExecute"
