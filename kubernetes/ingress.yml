@@ -4,8 +4,11 @@ metadata:
   name: portfolio
   namespace: garu-io
   annotations:
-    "cert-manager.io/cluster-issuer": "letsencrypt-prod"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: nginx
 spec:
+  ingressClassName: nginx
   rules:
   - host: "garu.io"
     http:
