@@ -7,4 +7,4 @@ resources:
 images:
 - name: garugaru/garu.io
   newName: garugaru/garu.io
-  newTag: ebed50783f6cb461e917e68e75bbeaac3d67ed0b
+  newTag: 3859d3aa37a66d49389a4f541994f5fca52fd66a
